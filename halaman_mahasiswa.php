@@ -61,7 +61,7 @@ if(!$result = $conn->query('SELECT * FROM mahasiswa')) {
                             <?php
                             include 'koneksi.php';
                             $no = 1;
-                            $select = mysqli_query($conn, "SELECT * FROM mahasiswa");
+                            $select = mysqli_query($conn, "SELECT * FROM mahasiswa WHERE tipe=2");
                             
                             while ($d = mysqli_fetch_array($select)) {
                             ?>
