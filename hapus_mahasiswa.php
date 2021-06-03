@@ -8,5 +8,5 @@ $mahasiswa_id = $_GET['mahasiswa_id'];
 	}
 
 	$delete = mysqli_query($conn, "DELETE FROM mahasiswa WHERE mahasiswa_id = '$mahasiswa_id'");
-	header('location:halaman_admin.php');
+	header('location:lihat_mahasiswa.php');
 ?>
