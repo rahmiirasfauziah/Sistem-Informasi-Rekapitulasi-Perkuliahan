@@ -1,7 +1,6 @@
 <?php
 
 if (isset($_POST['submit'])) {
-    $mahasiswa_id = $_POST['mahasiswa_id'];
     $nama = $_POST['nama'];
     $nim = $_POST['nim'];
     $email = $_POST['email'];
@@ -10,7 +9,7 @@ if (isset($_POST['submit'])) {
 
     include 'koneksi.php';
 
-    $sql = "INSERT INTO mahasiswa VALUES('$mahasiswa_id','$nama','$nim','$email','$tipe','$password')";
+    $sql = "INSERT INTO mahasiswa VALUES('','$nama','$nim','$email','$tipe','$password')";
     $query = mysqli_query($conn, $sql);
 
     if($query) { 
@@ -54,10 +53,10 @@ if (isset($_POST['submit'])) {
                         <?php } ?>
                         <form method="POST" action="tambah_mahasiswa.php">
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="exampleInputEmail1">ID Mahasiswa</label>
                                 <input type="text" maxlength="5" name="mahasiswa_id" class="form-control" id="exampleInputEmail1" placeholder="Masukkan ID Mahasiswa" required onkeypress="return Angkasaja(event)">
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Nama Mahasiswa</label>
                                 <input type="text" name="nama" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Nama Mahasiswa" required>
@@ -79,7 +78,7 @@ if (isset($_POST['submit'])) {
 
                             <div class="row ml-1">
                                 <button onclick="return confirm('Apakah data yang diinput sudah benar?');" type="submit" name="submit" class="btn btn-info">Simpan</button>
-                                <a href="halaman_mahasiswa.php" class="btn btn-primary ml-2">Kembali</a>
+                                <a href="lihat_mahasiswa.php" class="btn btn-primary ml-2">Kembali</a>
                             </div>
                         </form>
                         <script type="text/javascript">
