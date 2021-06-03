@@ -55,7 +55,7 @@ $data = $result->fetch_assoc();
                     <div class="card-body">
 
 
-                        <h4 class="text-center">Form Update</h4>
+                        <h4 class="text-center">Form Edit Mahasiswa</h4>
                         <?php if(isset($message)){?>
                         <div class="alert alert-success" role="alert">
                             <?php echo $message ?>
@@ -86,7 +86,7 @@ $data = $result->fetch_assoc();
 
                                 <div class="row ml-1">
                                     <button onclick="return confirm('Apakah anda ingin mengedit data?');" type="submit" name="submit" class="btn btn-info">Simpan</button>
-                                    <a href="halaman_mahasiswa.php" class="btn btn-primary ml-2">Kembali</a>
+                                    <a href="lihat_mahasiswa.php" class="btn btn-primary ml-2">Kembali</a>
                                 </div>
                             </form>
                     </div>
