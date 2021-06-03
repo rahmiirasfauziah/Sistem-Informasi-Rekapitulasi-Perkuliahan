@@ -1,10 +1,10 @@
 <?php 
-// mengaktifkan session php
+// mengaktifkan session 
 session_start();
 
 // menghapus semua session
 session_destroy();
 
-// mengalihkan halaman ke halaman login
+// mengalihkan halaman ke halaman utama
 header("location:index.php");
 ?>
