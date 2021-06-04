@@ -67,9 +67,6 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="lihat_kelas.php"><i class="far fa-clipboard mr-2"></i>Daftar Kelas</a><hr class="bg-secondary">
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="lihat_makul.php"><i class="fas fa-book-open mr-2"></i>Daftar Mata Kuliah</a><hr class="bg-secondary">
-          </li>
         </ul>
       </div>
       
@@ -114,19 +111,6 @@
                     <p><?php echo $jumlah_data; ?></p>
               </div>
               <p class="card-text text-white"><a href="lihat_kelas.php" class="text-white">Lihat Detail<i class="fas fa-angle-double-right ml-2"></i></a></p>
-            </div>
-          </div>
-
-          <div class="card bg-danger ml-5" style="width: 18rem;">
-            <div class="card-body">
-              <div class="card-body-icon">
-                <i class="fas fa-book-open mr-2"></i>
-              </div>
-              <h5 class="card-title">JUMLAH MATA KULIAH</h5>
-              <div class="display-4">
-                
-              </div>
-              <p class="card-text text-white"><a href="lihat_makul.php" class="text-white">Lihat Detail<i class="fas fa-angle-double-right ml-2"></i></a></p>
             </div>
           </div>
 
