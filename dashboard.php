@@ -104,7 +104,14 @@
               </div>
               <h5 class="card-title">JUMLAH KELAS</h5>
               <div class="display-4">
-                
+                <?php
+                include 'koneksi.php';
+                  $select = mysqli_query($conn, "select * from kelas");
+                    ?>
+                    <?php
+                        $jumlah_data=mysqli_num_rows($select);
+                      ?>
+                    <p><?php echo $jumlah_data; ?></p>
               </div>
               <p class="card-text text-white"><a href="lihat_kelas.php" class="text-white">Lihat Detail<i class="fas fa-angle-double-right ml-2"></i></a></p>
             </div>
